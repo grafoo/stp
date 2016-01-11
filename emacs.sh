@@ -42,6 +42,6 @@ else
   cd "$HOME/src/emacs-${release}"
   ./configure --prefix=$HOME/app/emacs --with-x-toolkit=no --with-xpm=no
   make && make install
-  ln -s $HOME/app/emacs/bin/emacs-24.5 $HOME/bin/emacs
+  ln -s $HOME/app/emacs/bin/emacs-${release} $HOME/bin/emacs
 fi
 
