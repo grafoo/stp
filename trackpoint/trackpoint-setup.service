@@ -1,0 +1,12 @@
+[Unit]
+Description=configure trackpoint speed and sensitivity
+#After=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/trackpoint-setup.sh
+SuccessExitStatus=0
+RemainAfterExit=true
+
+[Install]
+WantedBy=graphical.target
